@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@drawable/fundopadrao" >
+    <!--  android:background="#6A8AA3" >--> 
+    
+    <ImageView
+        android:id="@+id/activLoginImgLogoGrandao"
+        android:layout_width="280dip"
+        android:layout_height="90dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logogrande" />
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="3.23"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical" >
+	
+   	<TextView
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	     android:gravity="left"
+   	     android:lineSpacingExtra="3dp"
+   	     android:layout_centerInParent="true"
+   	    android:layout_margin="10dp"
+   	    android:drawableLeft="@drawable/error"
+   	    android:text="O Redu não encontrou uma conexão com a Internet e será finalizado. \nConecte-se a Internet!"
+   	    android:textColor="@color/red"
+   	    android:textSize="16dp"
+   	    android:textStyle="bold" />
+
+		<Button
+		    android:id="@+id/btSair"
+		    android:layout_width="100dp"
+		    android:layout_height="40dp"
+		    android:layout_gravity="center_horizontal|bottom"
+		    android:layout_marginTop="10px"
+		    android:background="@drawable/bnt_mostrar_mais"
+		    android:text="Finalizar"
+		    android:textColor="@color/white" />
+		
+	</LinearLayout>
+	
+</LinearLayout>

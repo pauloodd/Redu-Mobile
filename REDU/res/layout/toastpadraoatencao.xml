@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center"
+    android:background="@drawable/rtgarredtoastpadraoatencao" >
+
+      <ImageView
+          android:id="@+id/imageAtencao"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:src="@drawable/atencao" />
+      
+    <TextView
+        android:id="@+id/toastPadraoEtqMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="4dip"
+        android:text="Mensagem de atenção"
+        android:textColor="#000000"
+        android:textSize="10dip" />
+
+</LinearLayout>

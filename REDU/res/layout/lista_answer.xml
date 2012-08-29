@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"  android:orientation="vertical" 
+  android:layout_height="fill_parent" android:background="@color/cinza_post" android:gravity="center_horizontal"  >
+  
+    <LinearLayout
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/azul_barra"
+        android:orientation="horizontal" >
+        
+       <ImageView
+	            android:id="@+id/logoBarra"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:src="@drawable/logo_barra_superior" >
+
+        </ImageView>
+
+       <LinearLayout
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:background="@color/azul_barra"
+        android:orientation="horizontal" >
+        
+       <ImageView
+           android:id="@+id/btnAtualizar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp" 
+           android:layout_marginRight="5dp"
+           android:src="@drawable/atualizar" />
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+     
+   
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"  >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+    <LinearLayout
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout android:id="@+id/backgroundPerfil"
+            android:layout_width="61dp" android:layout_height="65dp" android:layout_marginTop="10dp" android:background="@drawable/perfil_default">
+            
+	        <ImageView
+	            android:id="@+id/imgPerfil"
+	            android:layout_width="57dp"
+	            android:layout_height="52dp"
+	            android:layout_marginLeft="2dp"
+	            android:layout_marginTop="5dp"
+	            android:src="@drawable/perfil" >
+
+	        </ImageView>
+        </RelativeLayout>
+      
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout android:id="@+id/view_curso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ava_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ava_icon" />
+
+                <TextView
+                    android:id="@+id/curso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Ciência da Computação"
+                    android:textColor="@color/titulos"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/view_disciplina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/curso_icon"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="35dp"
+                    android:src="@drawable/curso_icon" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/disciplina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Interface Usuário Máquina"
+                    android:textColor="@color/titulos"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" android:id="@+id/view_modulo" >
+
+                <TextView
+                    android:id="@+id/moduloSimbolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text=">"
+                    android:textColor="@color/gray_light"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/modulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="12o Encontro de 30: Speech ..."
+                    android:textColor="@color/titulos"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/view_nome_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/gravata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/gravata" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/usuario_nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="Alex Sandro"
+                    android:textColor="@color/titulos"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/local_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Dom Normal: The Desing of Things"
+                    android:textColor="@color/titulos"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" >
+
+                   <LinearLayout
+                     android:layout_width="150dp"
+                     android:layout_height="wrap_content"
+                     android:gravity="left"
+                     android:orientation="horizontal" >
+                     
+	                 <TextView
+	                     android:id="@+id/tempo_passado"
+	                     android:layout_width="match_parent"
+	                     android:layout_height="wrap_content"
+	                     android:layout_marginLeft="5dp"
+	                     android:layout_weight="4.29"
+	                     android:text="há 5 dias"
+	                     android:textColor="@color/gray"
+	                     android:textSize="10dp" />
+                  </LinearLayout>
+
+                 <LinearLayout android:id="@+id/comentarios_duvidas"
+                     android:layout_width="103dp"
+                     android:layout_height="wrap_content"
+                     android:gravity="right"  
+                     android:orientation="horizontal" >
+
+                     <ImageView
+                         android:id="@+id/baloes"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/baloes" >
+                     </ImageView>
+
+                     <TextView
+                         android:id="@+id/qtd_comentarios"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:text="10"
+                         android:textColor="@color/gray"
+                         android:textSize="10dp" />
+
+                     <ImageView
+                         android:id="@+id/duvida"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:src="@drawable/duvida" >
+                     </ImageView>
+
+                     <TextView
+                         android:id="@+id/qtd_duvidas"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:text="3"
+                         android:textColor="@color/gray"
+                         android:textSize="10dp" />
+                 </LinearLayout>
+             </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+       
+     <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/conteudo_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Comentário da Aula"
+                    android:textColor="@color/preto"
+                    android:textSize="12dp" />
+            </LinearLayout>
+    
+   <TextView
+       android:id="@+id/sem_comentarios"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="10dp" android:visibility="gone"
+       android:gravity="center" 
+       android:text="-Sem comentários-"
+       android:textColor="@color/gray"
+       android:textSize="14dp" />
+
+   <LinearLayout
+       android:id="@+id/list_view_respostas"
+       android:layout_width="fill_parent" android:background="@color/cinza_comentario"
+       android:layout_height="wrap_content" android:orientation="vertical" >
+
+	</LinearLayout>
+	
+	<LinearLayout  
+	    android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:gravity="center" android:orientation="horizontal" >
+	    
+	    <Button  android:id="@+id/btn_comentar"
+	        android:layout_width="100dp"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/bnt_mostrar_mais"
+	        android:text="Comentar"
+	        android:textColor="@color/white" />
+	    
+	    <Button android:id="@+id/btn_duvida"
+	        android:layout_width="100dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/bnt_mostrar_mais"
+	        android:text="Dúvida"
+	        android:textColor="@color/white" />
+
+	</LinearLayout>
+	
+	  </TableLayout>
+   </ScrollView>
+   
+</LinearLayout>
+  
+  
+  
+
+

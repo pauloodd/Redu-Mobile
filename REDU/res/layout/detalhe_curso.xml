@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cinza_post"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal" android:background="@drawable/fundo_ava">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"  android:gravity="center_vertical">
+            
+            <LinearLayout android:layout_width="40dp" 
+                android:layout_height="fill_parent"
+                android:gravity="center">
+                
+                <ImageView
+                    android:id="@+id/curso_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/curso_icon" />
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/ambiante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Centro de Informática"
+                    android:textColor="@color/titulos"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+          
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
