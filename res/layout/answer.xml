@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5sp" >
+
+        <ImageView
+            android:id="@+id/answerImgUserThumb"
+            android:layout_width="32sp"
+            android:layout_height="32sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/default_user_thumb" />
+
+        <TextView
+            android:id="@+id/answerLblUserFullName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@+id/answerImgUserThumb"
+            android:text="Informações"
+            android:textColor="#73c3e6"
+            android:textSize="13.25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/answerLblCreationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerLblUserFullName"
+            android:layout_below="@+id/answerLblUserFullName"
+            android:text="Data de criação"
+            android:textColor="#b2b2b2"
+            android:textSize="10.25sp" />
+
+        <br.com.redumobile.gui.LinkEnabledTextView
+            android:id="@+id/answerLblText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerLblCreationDate"
+            android:layout_below="@+id/answerLblCreationDate"
+            android:textColor="#000000"
+            android:textColorLink="#73c3e6"
+            android:textSize="13.25sp" />
+    </RelativeLayout>
+
+</LinearLayout>

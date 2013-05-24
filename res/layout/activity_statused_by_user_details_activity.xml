@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.redumobile.gui.VerticalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityStatusedByUserDetailsScrollMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/gray_background" >
+
+            <ImageView
+                android:id="@+id/activityStatusedByUserDetailsImgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7.25sp"
+                android:src="@drawable/user_icon"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/activityStatusedByUserDetailsLblFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activityStatusedByUserDetailsImgUser"
+                android:paddingLeft="5sp"
+                android:textColor="#4DADD6"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="#FFFFFF"
+            android:padding="5sp" >
+
+            <ImageView
+                android:id="@+id/activityStatusedByUserDetailsImgUserThumb"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/default_user_thumb" />
+
+            <TextView
+                android:id="@+id/activityStatusedByUserDetailsLblInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@+id/activityStatusedByUserDetailsImgUserThumb"
+                android:text="Informações"
+                android:textColor="#000000"
+                android:textSize="13.25sp" />
+
+            <TextView
+                android:id="@+id/activityStatusedByUserDetailsLblCreationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/activityStatusedByUserDetailsLblInfo"
+                android:layout_below="@+id/activityStatusedByUserDetailsLblInfo"
+                android:text="Data de criação"
+                android:textColor="#b2b2b2"
+                android:textSize="10.25sp" />
+
+            <ImageView
+                android:id="@+id/activityStatusedByUserDetailsImgUpArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/activityStatusedByUserDetailsLblCreationDate"
+                android:layout_below="@+id/activityStatusedByUserDetailsLblCreationDate"
+                android:paddingLeft="10sp"
+                android:src="@drawable/up_arrow" />
+
+            <LinearLayout
+                android:id="@+id/activityStatusedByUserDetailsLytText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/activityStatusedByUserDetailsImgUpArrow"
+                android:layout_below="@+id/activityStatusedByUserDetailsImgUpArrow"
+                android:background="@drawable/gray_background"
+                android:orientation="vertical"
+                android:paddingBottom="5sp"
+                android:paddingLeft="7.5sp"
+                android:paddingRight="7.5sp"
+                android:paddingTop="5sp" >
+
+                <br.com.redumobile.gui.LinkEnabledTextView
+                    android:id="@+id/activityStatusedByUserDetailsLblText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textColorLink="#73c3e6"
+                    android:textSize="13.25sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/activityStatusedByUserDetailsImgUpArrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/activityStatusedByUserDetailsLytText"
+                android:layout_below="@+id/activityStatusedByUserDetailsLytText"
+                android:paddingRight="10sp"
+                android:paddingTop="2.5sp"
+                android:src="@drawable/up_arrow" />
+
+            
+            <LinearLayout
+                    android:id="@+id/activityStatusedByUserDetailsListAnswers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical"
+                    android:layout_alignLeft="@+id/activityStatusedByUserDetailsLytText"
+                    android:layout_below="@+id/activityStatusedByUserDetailsImgUpArrow2"
+                    android:background="@drawable/gray_background"
+                    android:divider="@drawable/divider"
+                    android:dividerHeight="1sp"
+                    android:padding="5sp" >
+              
+                 <LinearLayout
+                     android:id="@+id/linearLayoutUserDetailsCarregando"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/gray_background"
+                     android:orientation="horizontal" >
+                    
+		                 <ProgressBar
+					        android:id="@+id/carregandoUserDetails"
+					        android:layout_width="20sp"
+					        android:layout_height="20sp"
+					        android:layout_marginBottom="5sp"
+					        android:layout_marginTop="5sp"
+					        android:indeterminate="true"
+					        android:indeterminateBehavior="cycle"
+					        android:indeterminateOnly="true" />
+
+                 </LinearLayout>
+                 
+                 
+                </LinearLayout>
+                
+        </RelativeLayout>
+    </LinearLayout>
+
+</br.com.redumobile.gui.VerticalScrollView>

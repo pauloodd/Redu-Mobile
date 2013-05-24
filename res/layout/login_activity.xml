@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/loginActivityImgLogo"
+        android:layout_width="280sp"
+        android:layout_height="90sp"
+        android:layout_marginTop="60sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="120sp" >
+
+        <Button
+            android:id="@+id/loginActivityBtnSignIn"
+            style="@style/DefaultBlueButton"
+            android:layout_width="72sp"
+            android:layout_height="36sp"
+            android:background="@drawable/default_blue_button"
+            android:text="Entrar"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/loginActivityChkKeepConnected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manter-me contectado"
+            android:textColor="#6D6E6F"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

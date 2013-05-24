@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:padding="5sp" >
+
+    <ImageView
+        android:id="@+id/activityStatusedByUserImgUserThumb"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_user_thumb" />
+
+    <TextView
+        android:id="@+id/activityStatusedByUserLblInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@+id/activityStatusedByUserImgUserThumb"
+        android:text="Informações"
+        android:textColor="#000000"
+        android:textSize="13.25sp" />
+
+    <TextView
+        android:id="@+id/activityStatusedByUserLblCreationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activityStatusedByUserLblInfo"
+        android:layout_below="@+id/activityStatusedByUserLblInfo"
+        android:text="Data de criação"
+        android:textColor="#b2b2b2"
+        android:textSize="10.25sp" />
+
+    <ImageView
+        android:id="@+id/activityStatusedByUserImgUpArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activityStatusedByUserLblCreationDate"
+        android:layout_below="@+id/activityStatusedByUserLblCreationDate"
+        android:paddingLeft="10sp"
+        android:src="@drawable/up_arrow" />
+
+    <LinearLayout
+        android:id="@+id/activityStatusedByUserLytText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activityStatusedByUserImgUpArrow"
+        android:layout_below="@+id/activityStatusedByUserImgUpArrow"
+        android:background="@drawable/gray_background"
+        android:orientation="vertical"
+        android:padding="5sp" >
+
+        <br.com.redumobile.gui.LinkEnabledTextView
+            android:id="@+id/activityStatusedByUserLblText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textColorLink="#73c3e6"
+            android:textSize="13.25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/activityStatusedByUserLytText"
+        android:layout_below="@+id/activityStatusedByUserLytText"
+        android:layout_marginTop="2.5sp"
+        android:gravity="right|center_vertical" >
+
+        <ImageView
+            android:id="@+id/activityStatusedByUserImgArrowRevolve"
+            android:layout_width="8.25sp"
+            android:layout_height="8.25sp"
+            android:layout_marginRight="3sp"
+            android:src="@drawable/arrow_revolve" />
+
+        <TextView
+            android:id="@+id/activityStatusedByUserLblAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="Responder"
+            android:textColor="#73c3e6"
+            android:textSize="14sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/activityStatusedByUserImgAnswers"
+            android:layout_width="13sp"
+            android:layout_height="10sp"
+            android:layout_marginRight="3sp"
+            android:src="@drawable/answers_ico" />
+
+        <TextView
+            android:id="@+id/activityStatusedByUserLblAnswersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.redumobile.gui.VerticalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityStatusedBySpaceDetailsScrollMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" >
+
+        <RelativeLayout
+            android:id="@+id/activityStatusedBySpaceDetailsLytBreadcrumb"
+            android:layout_width="fill_parent"
+            android:layout_height="30sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/gray_background" >
+
+            <ImageView
+                android:id="@+id/activityStatusedBySpaceDetailsImgSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7.25sp"
+                android:src="@drawable/space_icon"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/activityStatusedBySpaceDetailsLblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activityStatusedBySpaceDetailsImgSpace"
+                android:paddingLeft="5sp"
+                android:textColor="#4DADD6"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityStatusedBySpaceDetailsLytBreadcrumb"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="5sp" >
+
+            <ImageView
+                android:id="@+id/activityStatusedBySpaceDetailsImgSpace2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/space_icon" />
+
+            <TextView
+                android:id="@+id/activityStatusedBySpaceDetailsLblMainAndSecondary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/activityStatusedBySpaceDetailsImgSpace2"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@+id/activityStatusedBySpaceDetailsImgSpace2"
+                android:textColor="#B3B3B3"
+                android:textSize="13.25sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/activityStatusedBySpaceDetailsLblMainAndSecondary"
+                android:layout_marginTop="5sp" >
+
+                <ImageView
+                    android:id="@+id/activityStatusedBySpaceDetailsImgUserThumb"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/default_user_thumb" />
+
+                <TextView
+                    android:id="@+id/activityStatusedBySpaceDetailsLblInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@+id/activityStatusedBySpaceDetailsImgUserThumb"
+                    android:text="Informações"
+                    android:textColor="#000000"
+                    android:textSize="13.25sp" />
+
+                <TextView
+                    android:id="@+id/activityStatusedBySpaceDetailsLblCreationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/activityStatusedBySpaceDetailsLblInfo"
+                    android:layout_below="@+id/activityStatusedBySpaceDetailsLblInfo"
+                    android:text="Data de criação"
+                    android:textColor="#b2b2b2"
+                    android:textSize="10.25sp" />
+
+                <ImageView
+                    android:id="@+id/activityStatusedBySpaceDetailsImgUpArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/activityStatusedBySpaceDetailsLblCreationDate"
+                    android:layout_below="@+id/activityStatusedBySpaceDetailsLblCreationDate"
+                    android:paddingLeft="10sp"
+                    android:src="@drawable/up_arrow" />
+
+                <LinearLayout
+                    android:id="@+id/activityStatusedBySpaceDetailsLytText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/activityStatusedBySpaceDetailsImgUpArrow"
+                    android:layout_below="@+id/activityStatusedBySpaceDetailsImgUpArrow"
+                    android:background="@drawable/gray_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="7.5sp"
+                    android:paddingRight="7.5sp"
+                    android:paddingTop="5sp" >
+
+                    <br.com.redumobile.gui.LinkEnabledTextView
+                        android:id="@+id/activityStatusedBySpaceDetailsLblText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textColorLink="#73c3e6"
+                        android:textSize="13.25sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/activityStatusedBySpaceDetailsImgUpArrow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/activityStatusedBySpaceDetailsLytText"
+                    android:paddingRight="10sp"
+                    android:paddingTop="2.5sp"
+                    android:src="@drawable/up_arrow" />
+
+                <LinearLayout
+                    android:id="@+id/activityStatusedBySpaceDetailsListAnswers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical"
+                    android:layout_alignLeft="@+id/activityStatusedBySpaceDetailsLytText"
+                    android:layout_below="@+id/activityStatusedBySpaceDetailsImgUpArrow2"
+                    android:background="@drawable/gray_background"
+                    android:divider="@drawable/divider"
+                    android:dividerHeight="1sp"
+                    android:padding="5sp" >
+                    
+                    
+                     <LinearLayout
+	                    android:id="@+id/linearLayoutSpaceDetailsCarregando"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/gray_background">
+	                     
+	                    
+			                 <ProgressBar
+						        android:id="@+id/carregandoSpaceDetails"
+						        android:layout_width="20sp"
+						        android:layout_height="20sp"
+						        android:layout_marginBottom="5sp"
+						        android:layout_marginTop="5sp"
+						        android:indeterminate="true"
+						        android:indeterminateBehavior="cycle"
+						        android:indeterminateOnly="true" />
+
+	                 </LinearLayout>
+                    
+                    
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</br.com.redumobile.gui.VerticalScrollView>

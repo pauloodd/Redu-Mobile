@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/gray_background" >
+
+        <ImageView
+            android:id="@+id/postOnSpaceWallActivityImgSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7.25sp"
+            android:src="@drawable/space_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/postOnSpaceWallActivityLblName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/postOnSpaceWallActivityImgSpace"
+            android:paddingLeft="5sp"
+            android:textColor="#4DADD6"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/postOnSpaceWallActivityImgUpArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:paddingLeft="10sp"
+        android:src="@drawable/up_arrow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="@drawable/gray_background"
+        android:orientation="vertical"
+        android:paddingBottom="5sp" >
+        
+        <ImageView
+        android:id="@+id/invisible2"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:paddingLeft="10sp"
+        android:src="@drawable/up_arrow" />
+
+        <EditText
+            android:id="@+id/postOnSpaceWallActivityTxtPostText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:inputType="textMultiLine"
+            android:maxLines="16"
+            android:textSize="12.85sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/postOnSpaceWallActivityBtnPost"
+                style="@style/DefaultBlueButton"
+                android:layout_width="64sp"
+                android:layout_height="32sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5.75sp"
+                android:background="@drawable/default_blue_button"
+                android:text="Postar"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/postOnSpaceWallActivityLblTextInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.75sp"
+                android:text="800 caracteres restantes."
+                android:textColor="#B2B2B2"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/postOnSpaceWallActivityLytSpinner"
+                android:layout_width="64sp"
+                android:layout_height="32sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.75sp"
+                android:background="@drawable/gray_background_with_border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateBehavior="cycle"
+                    android:indeterminateOnly="true" />
+            </LinearLayout>
+
+           <!-- 
+            <ImageButton
+                android:id="@+id/postOnSpaceWallActivityBtnStartSpeech"
+                android:layout_width="28sp"
+                android:layout_height="32sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10sp"
+                android:layout_toLeftOf="@+id/postOnSpaceWallActivityBtnPost"
+                android:background="@drawable/default_white_button"
+                android:src="@drawable/mic_icon" />
+            --> 
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
